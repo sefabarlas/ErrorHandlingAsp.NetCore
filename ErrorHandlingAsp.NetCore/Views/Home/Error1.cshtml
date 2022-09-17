@@ -1,0 +1,10 @@
+﻿@{
+    Exception ex = ViewData["exception"] as Exception;
+    ViewData["Title"] = "Error1";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Error1</h1>
+
+<h2>Hata Mesahı: @ex.Message</h2>
+<h3>Hata Sayfassı: @ViewData["Path"]</h3>
